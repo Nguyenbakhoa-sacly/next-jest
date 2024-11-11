@@ -4,7 +4,7 @@ type Params = {
   };
 };
 
-export async function generateMetadata({ params }: any) {
+export async function generateMetadata({ params }: Params) {
   return { title: `Post: ${params.slug}` };
 }
 
@@ -13,5 +13,6 @@ export default function Page({ params }: Params) {
     <h1>Slug: {params.slug}</h1>
     <p>HelloDev</p>
     <p>Welcome to DN</p>
+    <p>Welcome to Hallo</p>
   </>;
 }
